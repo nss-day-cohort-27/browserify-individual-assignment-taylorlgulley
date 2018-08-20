@@ -10,7 +10,7 @@ const placeEntry = (item) => {
             <p class="place__location">
                 Place Location: ${item.location}
             </p>
-            <button class="place__edit" id="edit--${item.id}">Edit</button>
+            <button class="place__delete" id="delete--${item.id}">Delete</button>
         </div>
     `
 }

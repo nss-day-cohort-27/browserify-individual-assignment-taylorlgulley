@@ -11,7 +11,7 @@ const DataManager = Object.create(null, {
             .then(response => response.json())
         }
     },
-    getPlaceEntryList: {
+    getPlaceEntry: {
         value: () => {
             return fetch("http://localhost:8088/places")
                 .then(response => response.json());
@@ -22,7 +22,7 @@ const DataManager = Object.create(null, {
             return fetch(`http://localhost:8088/places/${id}`, {
                 method: "DELETE"
             })
-            .then(r =>r.json())
+            .then(response =>response.json())
         }
     }
 })

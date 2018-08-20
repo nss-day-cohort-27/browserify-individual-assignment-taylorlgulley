@@ -11,13 +11,20 @@
 
 const formManager = require("./placeForm");
 const DataManager = require("./DataManager");
+const placeList = require("./placeList");
+const $ = require("jquery");
 
 // Render the form
 document.querySelector("#placeForm").innerHTML = formManager.renderPlaceForm();
 
 //Render the List
+DataManager.getPlaceEntry()
+    .then(places => {
+        placeList(places);
+    });
 
 //Button Functionality
+//The Save button
 document.querySelector(".savePlace").addEventListener("click", () => {
     const newPlace = {
         name: document.querySelector("#placeName").value,
@@ -26,8 +33,26 @@ document.querySelector(".savePlace").addEventListener("click", () => {
     }
     DataManager.savePlaceEntry(newPlace).then(() => {
         formManager.clearForm();
-        console.log("You posted it")
+        $("#placeList").empty();
+        DataManager.getPlaceEntry()
+            .then(places => {
+                placeList(places);
+            });
     })
+})
+//The Delete Button
+document.querySelector("#placeList").addEventListener("click", event => {
+    if (event.target.classList.contains("place__delete")) {
+        const id = parseInt(event.target.id.split("--")[1])
+        console.log(id, "id");
+        DataManager.deletePlaceEntry(id).then(() => {
+            $("#placeList").empty();
+            DataManager.getPlaceEntry()
+                .then(places => {
+                    placeList(places);
+                });
+        })
+    }
 })
 
 console.log("hello world");
