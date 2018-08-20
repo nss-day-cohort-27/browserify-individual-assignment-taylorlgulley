@@ -21,7 +21,7 @@ const formManager = Object.create(null, {
                 </fieldset>
 
                 <fieldset>
-                    <label for="placeLocation">Location of Event:</label>
+                    <label for="placeLocation">Location of Place:</label>
                     <input id="placeLocation"></textarea>
                 </fieldset>
 
