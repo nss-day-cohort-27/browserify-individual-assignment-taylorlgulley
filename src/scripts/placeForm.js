@@ -10,23 +10,21 @@ const formManager = Object.create(null, {
     renderPlaceForm: {
         value: () => {
             return `
-                <fieldset>
+            <form class="placeForm">
+                <div class="form-group">
                     <label for="placeName">Place Name:</label>
-                    <input required type="text" id="placeName">
-                </fieldset>
-
-                <fieldset>
+                    <input type="text" class="form-control" id="placeName" placeholder="Restaurant Name">
+                </div>
+                <div class="form-group">
                     <label for="placeDescription">Description of Food:</label>
-                    <textarea id="placeDescription" rows="10"></textarea>
-                </fieldset>
-
-                <fieldset>
+                    <textarea class="form-control" id="placeDescription" rows="3" placeholder="Great Food Description"></textarea>
+                </div>
+                <div class="form-group">
                     <label for="placeLocation">Location of Place:</label>
-                    <input id="placeLocation"></textarea>
-                </fieldset>
-
+                    <input type="text" class="form-control" id="placeLocation" placeholder="Somewhere in Nashville">
+                </div>
                 <button class="savePlace">Save Place</button>
-            `
+            </form>`
         }
     }
 })

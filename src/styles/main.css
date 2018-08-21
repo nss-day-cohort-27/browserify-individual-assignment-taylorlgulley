@@ -1,0 +1,26 @@
+body {
+    background-color: #24586C;
+}
+button {
+    background-color: #F2A645;
+    border-radius: 25px;
+    align-self: flex-end;
+    margin-top: auto;
+}
+.placeForm {
+    background-color: #7C8CA2;
+    padding: 10px;
+}
+.placeEntry {
+    background-color: #95BBC3;
+    border-radius: 25px;
+}
+.card-body {
+    display: flex;
+    flex-direction: column;
+    height: 25em;
+}
+.listHeader {
+    color: #F8F9F9;
+    padding: 10px;
+}

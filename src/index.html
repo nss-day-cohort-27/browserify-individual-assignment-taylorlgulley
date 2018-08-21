@@ -5,12 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Individual Assessment</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" media="screen" href="styles/main.css" />
 </head>
 <body>
-    <h1>Taylor's Favorite Restaurants</h1>
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <h1 class="display-4">Taylor's Favorite Restaurants</h1>
+            <p class="lead">These are a few really good options in Nashville.</p>
+        </div>
+    </div>
     <div id="placeForm"></div>
-    <div id="placeList"></div>
+    <div class="listHeader">
+        <h3 class="d-flex flex-wrap justify-content-center">Restaurant List</h3>
+    </div>
+    <div id="placeList" class="d-flex justify-content-around row"></div>
 
     <script src="./bundle.js"></script>
 </body>

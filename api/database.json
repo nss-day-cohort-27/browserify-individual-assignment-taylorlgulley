@@ -17,6 +17,12 @@
       "description": "Great Indian food with an interesting vibe. The naan and chutney variety are excellent. Also the Korma and Masala are both great options.",
       "location": "Downtown Nashville",
       "id": 3
+    },
+    {
+      "name": "Tansuo",
+      "description": "Great Chinese food. Really good style. The Firecracker Wonton and General Tso's Chicken are especially good.",
+      "location": "Downtown Nashville",
+      "id": 4
     }
   ]
 }
