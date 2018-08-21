@@ -3,7 +3,7 @@ const formManager = Object.create(null, {
     clearForm: {
         value: () => {
             document.querySelector("#placeName").value = ""
-            document.querySelector("#placeDate").value = ""
+            document.querySelector("#placeDescription").value = ""
             document.querySelector("#placeLocation").value = ""
         }
     },
@@ -16,8 +16,8 @@ const formManager = Object.create(null, {
                 </fieldset>
 
                 <fieldset>
-                    <label for="placeDate">Date of Visit:</label>
-                    <input type="date" id="placeDate"></textarea>
+                    <label for="placeDescription">Description of Food:</label>
+                    <textarea id="placeDescription" rows="10"></textarea>
                 </fieldset>
 
                 <fieldset>

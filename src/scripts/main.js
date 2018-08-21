@@ -28,7 +28,7 @@ DataManager.getPlaceEntry()
 document.querySelector(".savePlace").addEventListener("click", () => {
     const newPlace = {
         name: document.querySelector("#placeName").value,
-        date: document.querySelector("#placeDate").value,
+        description: document.querySelector("#placeDescription").value,
         location: document.querySelector("#placeLocation").value
     }
     DataManager.savePlaceEntry(newPlace).then(() => {
