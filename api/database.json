@@ -1,0 +1,22 @@
+{
+  "places": [
+    {
+      "name": "Two Ten Jack",
+      "description": "Great Japanese Food. Really good small plates with nice aesthetics. Good sushi and skewers.",
+      "location": "East Nashville",
+      "id": 1
+    },
+    {
+      "name": "Husk",
+      "description": "Americana style food with Farm to Table execution.  Everything was excellent.",
+      "location": "Downtown Nashville",
+      "id": 2
+    },
+    {
+      "name": "Chauhan",
+      "description": "Great Indian food with an interesting vibe. The naan and chutney variety are excellent. Also the Korma and Masala are both great options.",
+      "location": "Downtown Nashville",
+      "id": 3
+    }
+  ]
+}
