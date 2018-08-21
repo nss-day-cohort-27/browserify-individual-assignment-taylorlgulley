@@ -4,8 +4,8 @@ const placeEntry = (item) => {
             <p class="place__name">
                 Place Name: ${item.name}
             </p>
-            <p class="place__date">
-                Place Date: ${item.date}
+            <p class="place__description">
+                Description: ${item.description}
             </p>
             <p class="place__location">
                 Place Location: ${item.location}
